@@ -1,0 +1,24 @@
+.date-time-picker {
+  font-family: Arial, sans-serif;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.date-time-picker label {
+  font-weight: bold;
+}
+
+.date-time-picker input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.second-time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
+}
