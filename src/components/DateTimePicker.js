@@ -119,6 +119,7 @@ const DateTimePicker = () => {
 
   return (
     <div className="date-time-picker">
+      <h2>TARİH VE SAAT TOPLA</h2>
       <form onSubmit={handleSubmit}>
         <div className="datetime-input">
           <label htmlFor="first-date">Tarih Seçin: </label>
@@ -129,6 +130,7 @@ const DateTimePicker = () => {
             value={firstDate}
             onChange={handleFirstDateChange}
           />
+
           <label htmlFor="first-hour">Saat Seçin (Saat-Dakika-Saniye): </label>
           <div className="first-time">
             {" "}
@@ -163,7 +165,7 @@ const DateTimePicker = () => {
             />
           </div>
         </div>
-        <label htmlFor="second-hours">İkinci Saat: </label>
+        <label htmlFor="second-hours">Eklemek İstediğiniz Saati Seçin: </label>
         <div className="time-input">
           <input
             type="number"
@@ -199,6 +201,7 @@ const DateTimePicker = () => {
           <span>Hesapla</span>
         </button>
       </form>
+
       {result && (
         <div className="result">
           <p>Toplama Sonucu: {result.additionResult}</p>

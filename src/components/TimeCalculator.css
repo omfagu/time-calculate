@@ -4,7 +4,7 @@ p {
   color: aliceblue;
 }
 
-.date-time-picker {
+.time-calculator {
   font-family: Arial, sans-serif;
   padding: 20px;
   width: 300px;
@@ -26,19 +26,20 @@ p {
     border-color: #d9ff00; /* Bitiş rengi (örneğin kırmızı) */
   }
 }
-.date-time-picker input[type="date"] {
+
+.time-calculator input[type="date"] {
   width: calc(
     100% - 17px
   ); /* Örnek olarak, 20px yerine uygun bir değer belirleyin */
 }
 
-.date-time-picker label {
+.time-calculator label {
   font-weight: bold;
   margin-top: 1rem;
   color: aliceblue;
 }
 
-.date-time-picker input {
+.time-calculator input {
   width: 100%;
   padding: 8px;
   margin-top: 1rem;
@@ -55,16 +56,17 @@ p {
   gap: 5px;
   padding-bottom: 1rem;
 }
+
 .first-time {
   display: flex;
-
   margin-bottom: 1rem;
 }
 
 .time-input {
   display: flex;
 }
-.ui-btn {
+
+.calculate-btn {
   --btn-default-bg: rgb(41, 41, 41);
   --btn-padding: 15px 20px;
   --btn-hover-bg: rgb(51, 51, 51);
@@ -76,16 +78,14 @@ p {
   --hover-btn-color: #fac921;
   --default-btn-color: #fff;
   --font-size: 16px;
-  /* 👆 this field should not be empty */
   --font-weight: 600;
   --font-family: Menlo, Roboto Mono, monospace;
-  /* 👆 this field should not be empty */
   width: 100%;
 }
 
 /* button settings 👆 */
 
-.ui-btn {
+.calculate-btn {
   box-sizing: border-box;
   padding: var(--btn-padding);
   display: flex;
@@ -101,7 +101,7 @@ p {
   box-shadow: var(--btn-shadow);
 }
 
-.ui-btn span {
+.calculate-btn span {
   letter-spacing: var(--btn-letter-spacing);
   transition: var(--btn-transition);
   box-sizing: border-box;
@@ -109,25 +109,25 @@ p {
   background: inherit;
 }
 
-.ui-btn span::before {
+.calculate-btn span::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
 }
 
-.ui-btn:hover,
-.ui-btn:focus {
+.calculate-btn:hover,
+.calculate-btn:focus {
   background: var(--btn-hover-bg);
 }
 
-.ui-btn:hover span,
-.ui-btn:focus span {
+.calculate-btn:hover span,
+.calculate-btn:focus span {
   color: var(--hover-btn-color);
 }
 
-.ui-btn:hover span::before,
-.ui-btn:focus span::before {
+.calculate-btn:hover span::before,
+.calculate-btn:focus span::before {
   animation: chitchat linear both var(--btn-animation-duration);
 }
 
@@ -221,6 +221,7 @@ p {
     right: 0;
   }
 }
+
 .result {
   border: 1px solid #ccc;
   padding: 5px;
