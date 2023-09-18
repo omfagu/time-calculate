@@ -197,9 +197,7 @@ const DateTimePicker = () => {
             max="59"
           />
         </div>
-        <button class="ui-btn">
-          <span>Hesapla</span>
-        </button>
+        <button class="button">HESAPLA</button>
       </form>
 
       {result && (

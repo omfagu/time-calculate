@@ -3,7 +3,9 @@ p {
   margin-top: 1rem;
   color: aliceblue;
 }
-
+.time-calculator h2 {
+  color: aliceblue;
+}
 .time-calculator {
   font-family: Arial, sans-serif;
   padding: 20px;
